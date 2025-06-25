@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional - add more weights if you have them */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/fonts/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional - add more weights if you have them */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-Regular.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/CormorantGaramond-VariableFont_wght.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional - add more weights if you have them */
+@font-face {
+  font-family: 'Cormorant';
+  src: url('/fonts/CormorantGaramond-VariableFont_wght.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JakartaSans';
+  src: url('/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Optional - add more weights if you have them */
+@font-face {
+  font-family: 'JakartaSans';
+  src: url('/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}

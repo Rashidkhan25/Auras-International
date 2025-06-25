@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width" name="viewport" />
+    <title>Auras International</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+  </head>
+  <body>
+    <%- include("partials/header") %>
+
+  <section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-fade-overlay"></div>
+
+  <div class="hero-images">
+    <img src="/images/hero.png" class="hero-bg active" alt="Hero Image 1" />
+    <img src="/images/hero2.png" class="hero-bg" alt="Hero Image 2" />
+    <img src="/images/hero3.png" class="hero-bg" alt="Hero Image 3" />
+    <img src="/images/hero4.png" class="hero-bg" alt="Hero Image 4" />
+  </div>
+
+  <div class="hero-content">
+    <h1>Crafting Identity Through Every Stitch</h1>
+    <p>HAND EMBROIDERED &nbsp; EXCELLENCE FOR GLOBAL FASHION HOUSES</p>
+  </div>
+</section>
+
+    <section class="intro">
+      <p>
+        Auras International is a global embroidery house specialising in
+        handcrafted beading and embellishment—delivering precision, artistry,
+        and a timeless impact to fashion brands worldwide.
+      </p>
+    </section>
+
+  <section class="image-grid">
+  <div class="grid-box">
+    <div class="grid animate">
+      <img class="sustainable" src="/images/sustainable.png" alt="Bridal" />
+      <h3>SUSTAINABLE</h3>
+      <p>We create beauty with purpose. Fashion isn’t just about the final piece—it’s about how it’s made.</p>
+    </div>
+  </div>
+
+  <div class="grid-box">
+    <div class="grid animate">
+      <img class="global" src="/images/global.png" alt="Interiors" />
+      <h3>GLOBAL</h3>
+      <p>We collaborate with leading designers arounds the world, treating each partnership with the same care.</p>
+    </div>
+  </div>
+
+  <div class="grid-box">
+    <div class="grid animate">
+      <img class="reliable" src="/images/reliable.png" alt="Accessories" />
+      <h3>RELIABLE</h3>
+      <p>We are all about trust, precision and consistency, with our specialised touch to everything we do.</p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="services">
+      <div class="main-title1">Our Services</div>
+      <div class="service">
+        <div class="service-cards">
+          <div class="card">
+            <img class="dress" src="/images/dress.png" alt="Bridal" />
+            <p>Bridal & Evening Couture</p>
+          </div>
+          <div class="card">
+            <img class="chair" src="/images/chair.png" alt="Interiors" />
+            <p>Interiors & Soft Furnishings</p>
+          </div>
+          <div class="card">
+            <img class="purse" src="/images/purse.png" alt="Accessories" />
+            <p>Accessories & Custom Orders</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+  <div class="portfolio-left">
+    <h3>Explore Our Work</h3>
+    <div class="main-title">PORTFOLIO</div>
+    <a href="/our-work" class="view-btn">VIEW MORE</a>
+  </div>
+
+  <div class="portfolio-right">
+    <img src="/images/explore1.png" class="portfolio-img active" alt="Showcase 1" />
+    <img src="/images/explore2.png" class="portfolio-img" alt="Showcase 2" />
+    <img src="/images/explore3.png" class="portfolio-img" alt="Showcase 3" />
+    <img src="/images/explore4.png" class="portfolio-img" alt="Showcase 4" />
+    <img src="/images/explore5.png" class="portfolio-img" alt="Showcase 5" />
+    <img src="/images/explore6.png" class="portfolio-img" alt="Showcase 6" />
+  </div>
+</section>
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-text">
+          <div class="main-title">Contact Us</div>
+          <p>Are you ready to begin your embroidery journey?<br/> Let's talk.</p>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-input">
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Email Address" required />
+            </div>
+            <textarea placeholder="Message" required></textarea>
+            <div class="button-wrapper">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <%- include("partials/footer") %>
+    <script src="/js/index.js"></script>
+    <script src="/js/common.js"></script>
+  </body>
+</html>

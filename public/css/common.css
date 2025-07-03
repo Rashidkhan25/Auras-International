@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px 30px;
+  padding: 10px 15px 30px;
   font-family: 'JakartaSans';
   mix-blend-mode: multiply;
   position: relative;
@@ -38,6 +38,7 @@ nav {
   display: flex;
   align-items: center;
   transition: all 0.3s ease;
+  margin-top: 2rem;
 }
 
 nav a {
@@ -45,6 +46,11 @@ nav a {
   text-decoration: none;
   color: #3a3a3a;
   font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c8a898;
 }
 
 .contact-btn {
@@ -52,6 +58,11 @@ nav a {
   padding: 8px 16px;
   border-radius: 20px;
   color: #fff;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background-color: #b88f85;
 }
 
 @media (max-width: 768px) {
@@ -360,105 +371,141 @@ form textarea {
 
 /* ========== FOOTER ========== */
 .footer {
-  padding: 40px 70px 20px;
-  font-family: 'JakartaSans', sans-serif;
-  font-weight: 400;
-  margin-bottom: 60px;
-  margin-top: 40px;
+  padding: 40px 90px 20px;
+  font-family: 'JakartaSans';
+  background: linear-gradient(to bottom,#FAF9F6 , #f8f8f2, #BEC5A4, #A6B3A1);
+  color: #3a3a3a;
 }
 
 .footer hr {
   border: none;
-  border-top: 1px solid #222;
+  border-top: 1px solid #ccc;
   margin-bottom: 30px;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 40px;
 }
 
-.footer-contact {
-  color: #333;
-  flex: 1;
+.footer-logo {
+  width: 220px;
+  height: 110px;
+  mix-blend-mode: multiply;
 }
 
-.footer-title {
-  font-size: 28px !important;
-  margin-bottom: 8px;
-  color: #222;
-}
-
-.footer-contact p {
-  font-family: 'JakartaSans';
-  margin: 6px 0;
-  font-weight: 400;
-  font-size: 19px;
-}
-
-.footer-right {
+.footer-links,
+.footer-contact-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  gap: 12px;
+  gap: 3px;
+  margin-top: 40px;
+}
+
+.footer-links a,
+.footer-contact-info a {
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-contact-info p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer-connect-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-connect {
+  padding: 8px 24px;
+  border: 2px solid #e3b85d;
+  background: white;
+  color: #3a3a3a;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 22px;
+      width: 180px;
+      height: 50px;
+    text-align: center;
+}
+
+.footer-connect:hover {
+  background: #f9f3e6;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
 
 .footer-socials {
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
-
 .footer-socials img {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  filter: brightness(0.6) sepia(1) hue-rotate(310deg) saturate(0.7);
   transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(11%) sepia(2%) saturate(0%) hue-rotate(180deg) brightness(94%) contrast(89%);
 }
 
 .footer-socials img:hover {
   transform: scale(1.1);
 }
 
-.footer-connect {
-  padding: 8px 24px;
-  border: 1px solid #c9a99e;
-  background: transparent;
-  width: 120px;
-  height: 40px;
-  color: #a88474;
-  text-decoration: none;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  font-family: 'JakartaSans';
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.footer-connect:hover {
-  background-color: #f0eae6;
-}
-
-/* Responsive Footer */
+/* Responsive */
 @media (max-width: 768px) {
-
   .footer {
-    padding: 40px 20px;
+    padding: 30px 20px;
   }
 
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0;
   }
 
-  .footer-right {
-    align-items: flex-start;
+  .footer-links {
+    display: none;
   }
 
-  .footer-socials {
-    justify-content: flex-start;
+  .footer-connect-group {
+    justify-content: center;
   }
+
+  .footer-bottom {
+    gap: 10px;
+  }
+
+  .footer-connect {
+      width: 130px;
+      height: 50px;
+}
+.footer-socials img {
+  width: 35px;
+  height: 40px;
+}
+
+.footer-logo {
+    width: 190px;
+    height: 95px;
+}
 }

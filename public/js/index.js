@@ -35,3 +35,32 @@ const images1 = document.querySelectorAll('.portfolio-right img');
     current1 = (current1 + 1) % images1.length;
     images1[current1].classList.add('active');
   }, 4000);
+
+// Testimonials section
+ const slides = document.querySelectorAll('.testimonial-slide');
+  const prevBtn = document.querySelector('.testimonial-prev');
+  const nextBtn = document.querySelector('.testimonial-next');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  nextBtn.addEventListener('click', nextSlide);
+  prevBtn.addEventListener('click', prevSlide);
+
+  setInterval(nextSlide, 8000);
+
+  showSlide(currentSlide);

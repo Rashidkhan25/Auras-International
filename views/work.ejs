@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auras International</title>
 
-    <link rel="stylesheet" href="/css/work.css" />
-    <link rel="stylesheet" href="/css/common.css" />
-  </head>
-  <body>
-    <%- include('partials/header') %>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auras International</title>
+
+  <link rel="stylesheet" href="/css/work.css" />
+  <link rel="stylesheet" href="/css/common.css" />
+</head>
+
+<body>
+  <%- include('partials/header') %>
 
     <section class="hero">
       <div class="hero-fade-overlay"></div>
@@ -37,24 +39,24 @@
           </div>
         </div>
 
-     <div class="connector-lines">
-  <!-- Top verticals -->
-  <div class="vertical-line v1"></div>
-  <div class="vertical-line v2"></div>
-  <div class="vertical-line v3"></div>
+        <div class="connector-lines">
+          <!-- Top verticals -->
+          <div class="vertical-line v1"></div>
+          <div class="vertical-line v2"></div>
+          <div class="vertical-line v3"></div>
 
-  <!-- Top horizontal -->
-  <div class="horizontal-line"></div>
+          <!-- Top horizontal -->
+          <div class="horizontal-line"></div>
 
-  <!-- Bottom horizontal -->
-  <div class="horizontal-line lower"></div>
+          <!-- Bottom horizontal -->
+          <div class="horizontal-line lower"></div>
 
-  <!-- Center vertical from top to bottom -->
-  <div class="vertical-line center-lower"></div>
-  <div class="vertical-line b1"></div>
-<div class="vertical-line b2"></div>
-<div class="vertical-line b3"></div>
-</div>
+          <!-- Center vertical from top to bottom -->
+          <div class="vertical-line center-lower"></div>
+          <div class="vertical-line b1"></div>
+          <div class="vertical-line b2"></div>
+          <div class="vertical-line b3"></div>
+        </div>
 
         <!-- Bottom row -->
         <div class="services-row bottom-row">
@@ -72,11 +74,11 @@
           </div>
         </div>
       </div>
-
-      <div class="services-bottom-image">
-        <img src="/images/threads.png" alt="Threads Background" />
-      </div>
     </section>
+
+    <div class="services-bottom-image">
+      <img src="/images/threads.png" alt="Threads Background" />
+    </div>
 
     <main aria-label="Our Work" class="container" role="main">
       <div class="main-title">Our Work</div>
@@ -106,46 +108,19 @@
         </div>
         <div class="image-column">
           <div class="thumbs-vertical" id="thumbs1">
-            <img
-              src="/images/work1.png"
-              onclick="changeImage('mainImage1', this.src)"
-              class="active"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/c31910bf-14c5-4137-3c4f-b53443b35ece.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/680ae720-c6c7-4271-f7c5-e580a9d3363a.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/0e729bb1-2838-4d0f-7225-3b8943f0478a.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/003fdbf2-da08-4290-411d-502bbc8e44f4.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/ab8ad1e5-aff5-4a88-306c-171b3149514c.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/b03fb72b-eb1b-4217-7f56-2f2c145dace3.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/d405917a-9a8f-40cf-b412-ab3a0ae20175.jpg"
-              onclick="changeImage('mainImage1', this.src)"
-            />
+            <img src="/images/image1.png" onclick="changeImage('mainImage1', this.src)" class="active" />
+            <img src="/images/image2.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image3.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image4.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image5.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image6.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image7.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image8.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image9.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image10.png" onclick="changeImage('mainImage1', this.src)" />
+            <img src="/images/image11.png" onclick="changeImage('mainImage1', this.src)" />
           </div>
-          <img
-            id="mainImage1"
-            class="images-main"
-            src="/images/work1.png"
-            alt="Main Image"
-          />
+          <img id="mainImage1" class="images-main" src="/images/image1.png" alt="Main Image" />
         </div>
       </section>
 
@@ -153,35 +128,15 @@
       <section aria-label="Accessories & Custom Orders" class="section">
         <div class="media-group">
           <div class="image-wrapper">
-            <img
-              id="mainImage2"
-              class="images-main"
-              src="https://storage.googleapis.com/a1aa/image/7f75f124-50c5-4215-dadf-e5574146ae5c.jpg"
-              alt="Main Image"
-            />
+            <img id="mainImage2" class="images-main" src="/images/black1.png" alt="Main Image" />
           </div>
           <div class="thumbs-vertical" id="thumbs2">
-            <img
-              src="https://storage.googleapis.com/a1aa/image/7f75f124-50c5-4215-dadf-e5574146ae5c.jpg"
-              onclick="changeImage('mainImage2', this.src)"
-              class="active"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/f28ab4eb-8559-4e8d-018c-26307dae6d1e.jpg"
-              onclick="changeImage('mainImage2', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/f28ab4eb-8559-4e8d-018c-26307dae6d1e.jpg"
-              onclick="changeImage('mainImage2', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/f28ab4eb-8559-4e8d-018c-26307dae6d1e.jpg"
-              onclick="changeImage('mainImage2', this.src)"
-            />
-            <img
-              src="https://storage.googleapis.com/a1aa/image/f28ab4eb-8559-4e8d-018c-26307dae6d1e.jpg"
-              onclick="changeImage('mainImage2', this.src)"
-            />
+            <img src="/images/black1.png" onclick="changeImage('mainImage2', this.src)" class="active" />
+            <img src="/images/black2.png" onclick="changeImage('mainImage2', this.src)" />
+            <img src="/images/black3.png" onclick="changeImage('mainImage2', this.src)" />
+            <img src="/images/black4.png" onclick="changeImage('mainImage2', this.src)" />
+            <img src="/images/black1.png" onclick="changeImage('mainImage2', this.src)" />
+            <img src="/images/black3.png" onclick="changeImage('mainImage2', this.src)" />
           </div>
         </div>
 
@@ -239,48 +194,23 @@
         </div>
         <div class="image-column">
           <div class="thumbs-vertical" id="thumbs3">
-            <img
-              src="/images/work3.png"
-              onclick="changeImage('mainImage3', this.src)"
-              class="active"
-            />
-            <img
-              src="/images/image2.png"
-              onclick="changeImage('mainImage3', this.src)"
-            />
-            <img
-              src="/images/image3.png"
-              onclick="changeImage('mainImage3', this.src)"
-            />
-            <img
-              src="/images/image4.png"
-              onclick="changeImage('mainImage3', this.src)"
-            />
-            <img
-              src="/images/image5.png"
-              onclick="changeImage('mainImage3', this.src)"
-            />
-            <img
-              src="/images/image6.png"
-              onclick="changeImage('mainImage3', this.src)"
-            />
-            <img
-              src="/images/image7.png"
-              onclick="changeImage('mainImage3', this.src)"
-            />
+            <img src="/images/work1.png" onclick="changeImage('mainImage3', this.src)" class="active" />
+            <img src="/images/work2.png" onclick="changeImage('mainImage3', this.src)" />
+            <img src="/images/work3.png" onclick="changeImage('mainImage3', this.src)" />
+            <img src="/images/work4.png" onclick="changeImage('mainImage3', this.src)" />
+            <img src="/images/work5.png" onclick="changeImage('mainImage3', this.src)" />
+            <img src="/images/work6.png" onclick="changeImage('mainImage3', this.src)" />
+            <img src="/images/work7.png" onclick="changeImage('mainImage3', this.src)" />
+            <img src="/images/work8.png" onclick="changeImage('mainImage3', this.src)" />
           </div>
-          <img
-            id="mainImage3"
-            class="images-main"
-            src="/images/work3.png"
-            alt="Main Image"
-          />
+          <img id="mainImage3" class="images-main" src="/images/work1.png" alt="Main Image" />
         </div>
       </section>
     </main>
 
     <%- include('partials/footer') %>
-    <script src="/js/work.js"></script>
-    <script src="/js/common.js"></script>
-  </body>
+      <script src="/js/work.js"></script>
+      <script src="/js/common.js"></script>
+</body>
+
 </html>

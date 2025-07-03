@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width" name="viewport" />
-    <title>Auras International</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/common.css" />
-  </head>
-  <body>
-    <%- include("partials/header") %>
 
-  <section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-fade-overlay"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width" name="viewport" />
+  <title>Auras International</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("<%= process.env.EMAIL_JS %>");
+    })();
+  </script>
+</head>
 
-  <div class="hero-images">
-    <img src="/images/hero.png" class="hero-bg active" alt="Hero Image 1" />
-    <img src="/images/hero2.png" class="hero-bg" alt="Hero Image 2" />
-    <img src="/images/hero3.png" class="hero-bg" alt="Hero Image 3" />
-    <img src="/images/hero4.png" class="hero-bg" alt="Hero Image 4" />
-  </div>
+<body>
+  <%- include("partials/header") %>
 
-  <div class="hero-content">
-    <h1>Crafting Identity Through Every Stitch</h1>
-    <p>HAND EMBROIDERED &nbsp; EXCELLENCE FOR GLOBAL FASHION HOUSES</p>
-  </div>
-</section>
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="hero-fade-overlay"></div>
+
+      <div class="hero-images">
+        <img src="images/hero.png" class="hero-bg active" alt="Hero Image 1" />
+        <img src="images/hero2.png" class="hero-bg" alt="Hero Image 2" />
+        <img src="images/hero3.png" class="hero-bg" alt="Hero Image 3" />
+        <img src="images/hero4.png" class="hero-bg" alt="Hero Image 4" />
+      </div>
+
+      <div class="hero-content">
+        <h1>Crafting Identity Through Every Stitch</h1>
+        <p>HAND EMBROIDERED EXCELLENCE FOR GLOBAL FASHION HOUSES</p>
+      </div>
+    </section>
 
     <section class="intro">
       <p>
@@ -35,47 +42,55 @@
       </p>
     </section>
 
-  <section class="image-grid">
-  <div class="grid-box">
-    <div class="grid animate">
-      <img class="sustainable" src="/images/sustainable.png" alt="Bridal" />
-      <h3>SUSTAINABLE</h3>
-      <p>We create beauty with purpose. Fashion isn’t just about the final piece—it’s about how it’s made.</p>
-    </div>
-  </div>
+    <section class="image-grid">
+      <div class="grid-box">
+        <div class="grid animate">
+          <img class="sustainable" src="images/sustainable.png" alt="Bridal" />
+          <h3>SUSTAINABLE</h3>
+          <p>
+            We create beauty with purpose. Fashion isn’t just about the final
+            piece—it’s about how it’s made.
+          </p>
+        </div>
+      </div>
 
-  <div class="grid-box">
-    <div class="grid animate">
-      <img class="global" src="/images/global.png" alt="Interiors" />
-      <h3>GLOBAL</h3>
-      <p>We collaborate with leading designers arounds the world, treating each partnership with the same care.</p>
-    </div>
-  </div>
+      <div class="grid-box">
+        <div class="grid animate">
+          <img class="global" src="images/global.png" alt="Interiors" />
+          <h3>GLOBAL</h3>
+          <p>
+            We collaborate with leading designers arounds the world, treating
+            each partnership with the same care.
+          </p>
+        </div>
+      </div>
 
-  <div class="grid-box">
-    <div class="grid animate">
-      <img class="reliable" src="/images/reliable.png" alt="Accessories" />
-      <h3>RELIABLE</h3>
-      <p>We are all about trust, precision and consistency, with our specialised touch to everything we do.</p>
-    </div>
-  </div>
-</section>
-
+      <div class="grid-box">
+        <div class="grid animate">
+          <img class="reliable" src="images/reliable.png" alt="Accessories" />
+          <h3>RELIABLE</h3>
+          <p>
+            We are all about trust, precision and consistency, with our
+            specialised touch to everything we do.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section class="services">
       <div class="main-title1">Our Services</div>
       <div class="service">
         <div class="service-cards">
           <div class="card">
-            <img class="dress" src="/images/dress.png" alt="Bridal" />
+            <img class="dress" src="images/dress.png" alt="Bridal" />
             <p>Bridal & Evening Couture</p>
           </div>
           <div class="card">
-            <img class="chair" src="/images/chair.png" alt="Interiors" />
+            <img class="chair" src="images/chair.png" alt="Interiors" />
             <p>Interiors & Soft Furnishings</p>
           </div>
           <div class="card">
-            <img class="purse" src="/images/purse.png" alt="Accessories" />
+            <img class="purse" src="images/purse.png" alt="Accessories" />
             <p>Accessories & Custom Orders</p>
           </div>
         </div>
@@ -83,36 +98,151 @@
     </section>
 
     <section class="portfolio">
-  <div class="portfolio-left">
-    <h3>Explore Our Work</h3>
-    <div class="main-title">PORTFOLIO</div>
-    <a href="/our-work" class="view-btn">VIEW MORE</a>
-  </div>
+      <div class="portfolio-left">
+        <h3>Explore Our Work</h3>
+        <div class="main-title">PORTFOLIO</div>
+        <a href="/our-work.html" class="view-btn">VIEW MORE</a>
+      </div>
 
-  <div class="portfolio-right">
-    <img src="/images/explore1.png" class="portfolio-img active" alt="Showcase 1" />
-    <img src="/images/explore2.png" class="portfolio-img" alt="Showcase 2" />
-    <img src="/images/explore3.png" class="portfolio-img" alt="Showcase 3" />
-    <img src="/images/explore4.png" class="portfolio-img" alt="Showcase 4" />
-    <img src="/images/explore5.png" class="portfolio-img" alt="Showcase 5" />
-    <img src="/images/explore6.png" class="portfolio-img" alt="Showcase 6" />
-  </div>
-</section>
+      <div class="portfolio-right">
+        <img src="images/explore1.png" class="portfolio-img active" alt="Showcase 1" />
+        <img src="images/explore2.png" class="portfolio-img" alt="Showcase 2" />
+        <img src="images/explore3.png" class="portfolio-img" alt="Showcase 3" />
+        <img src="images/explore4.png" class="portfolio-img" alt="Showcase 4" />
+        <img src="images/explore5.png" class="portfolio-img" alt="Showcase 5" />
+        <img src="images/explore6.png" class="portfolio-img" alt="Showcase 6" />
+      </div>
+    </section>
+
+    <!-- Testimonial Heading Section -->
+    <section class="testimonial-heading">
+      <div>
+        Trusted by global fashion houses and boutique ateliers alike, we partner
+        with discerning brands worldwide.
+      </div>
+      <p>Here’s what some of our clients say about working with us:</p>
+    </section>
+
+    <!-- Testimonial Carousel Section -->
+    <section class="testimonial-carousel">
+      <div class="testimonial-slide active">
+        <p class="testimonial-text">
+          "Working with AURAS has been seamless from concept to delivery. Their
+          understanding of couture detailing and ability to translate abstract
+          briefs into embroidery is exceptional. A trusted extension of our
+          design team."
+        </p>
+        <p class="testimonial-author">
+          <em>Creative Director, Luxury Bridal House (North America)</em>
+        </p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          "They bring a rare mix of artistry and accountability. Every detail is
+          thought through, every stitch intentional. AURAS is not just a vendor
+          - they're our embroidery partner of choice."
+        </p>
+        <p class="testimonial-author">
+          <em>Design Director, Evening wear Brand (North America)</em>
+        </p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          "What stands out with AURAS is not just the finesse of the needlework,
+          but the consistency of quality and delivery. They've become a
+          behind-the-scenes partner we deeply rely on."
+        </p>
+        <p class="testimonial-author">
+          <em>Studio Buyer, Contemporary Evening wear Label (Israel)</em>
+        </p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          "Their handwork is refined, their finishes are precise, and their
+          attitude is always solution-oriented. Quietly elegant, professionally
+          grounded - just what we needed."
+        </p>
+        <p class="testimonial-author">
+          <em>Production Manager, Bespoke Atelier (South of Italy)</em>
+        </p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          "Everything is perfect. From stitch quality to the silent
+          understanding of couture timelines.”
+        </p>
+        <p class="testimonial-author"><em>AURAS delivers</em></p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          Working with AURAS INTERNATIONAL has been a seamless and inspiring
+          experience. Their attention to detail, commitment to craftsmanship,
+          and understanding of our design language has elevated every
+          collection. From complex hand-embroidery to intricate sampling, they
+          deliver with consistency, heart, and high standards — making them an
+          invaluable partner for us.”
+        </p>
+        <p class="testimonial-author">
+          <em>President of Couture Luxury Brand (Canada)</em>
+        </p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          “For our label rooted in heritage and opulence, AURAS INTERNATIONAL
+          has been a true creative ally. Their mastery in hand embroidery and
+          their ability to translate mood boards into soulful, luxurious pieces
+          has brought our collections to life. They understand the language of
+          luxury.”
+        </p>
+        <p class="testimonial-author">
+          <em>Head of Design, Fashion House (Middle East)</em>
+        </p>
+      </div>
+
+      <div class="testimonial-slide">
+        <p class="testimonial-text">
+          “Working with AURAS INTERNATIONAL has been a rare and valuable
+          experience. Their embroidery expertise, eye for detail, and ability to
+          interpret the creative world of Parisian fashion are exceptional.
+          Every piece created with them carries a soul, a hand, a story.”
+        </p>
+        <p class="testimonial-author">
+          <em>Creative Director of Couture House (France)</em>
+        </p>
+      </div>
+
+      <!-- Add more slides here -->
+
+      <div class="testimonial-nav">
+        <button class="testimonial-prev">&#8592;</button>
+        <button class="testimonial-next">&#8594;</button>
+      </div>
+    </section>
+
     <section class="contact">
       <div class="contact-container">
         <div class="contact-text">
           <div class="main-title">Contact Us</div>
-          <p>Are you ready to begin your embroidery journey?<br/> Let's talk.</p>
+          <p>
+            Are you ready to begin your embroidery journey?<br />
+            Let's talk.
+          </p>
         </div>
         <div class="contact-form">
           <form>
             <div class="form-input">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
+              <input type="text" placeholder="Full Name" id="name" required />
+              <input type="email" placeholder="Email Address" id="email" required />
             </div>
-            <textarea placeholder="Message" required></textarea>
+            <textarea placeholder="Message" id="message" required></textarea>
             <div class="button-wrapper">
-              <button type="submit">Send Message</button>
+              <button onclick="sendMail()" type="submit">Send Message</button>
             </div>
           </form>
         </div>
@@ -120,7 +250,9 @@
     </section>
 
     <%- include("partials/footer") %>
-    <script src="/js/index.js"></script>
-    <script src="/js/common.js"></script>
-  </body>
+      <script src="/js/sendEmail.js"></script>
+      <script src="js/index.js"></script>
+      <script src="js/common.js"></script>
+</body>
+
 </html>
